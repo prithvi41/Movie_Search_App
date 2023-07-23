@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+input#movieInput {
+    margin-bottom: 2rem;
+}
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movie {
+    flex-basis: calc(33.3333% - 20px);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.movie img {
+    width: 12rem;
+    height: 15rem;
+}
+.movie p {
+    margin: 10px 0;
+}
+#movieDetails {
+    margin-top: 20px;
+}
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.pagination {
+    margin-top: 20px;
+}
+.pagination button {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: lightgreen;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+} 
+.pagination button:hover {
+    background-color: #ddd;
+}
+@media screen and (max-width: 768px) {
+    .movie {
+      flex-basis: calc(50% - 20px);
+    }
+}
+@media screen and (max-width: 480px) {
+    .movie {
+      flex-basis: 100%;
+    }
+}
+  
