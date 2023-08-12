@@ -1,7 +1,7 @@
 const movieListElement = document.getElementById('movieList');
 const movieDetailsElement = document.getElementById('movieDetails');
 const movieInput = document.getElementById('movieInput');
-const apiKey = 'f7fceec4';
+const apiKey = 'Enter OMDB API Key';
 let currentPage = 1;
 let totalResults = 0;
 const moviesPerPage = 10;
